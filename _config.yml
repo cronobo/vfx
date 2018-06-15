@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vfx.cronobo.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cronobo
 github_username:  cronobo
+facebook_username: cronobo
 google_analytics: UA-111708584-3
 
 # Build settings
