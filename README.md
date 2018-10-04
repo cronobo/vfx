@@ -7,6 +7,8 @@ You need [ruby](https://www.ruby-lang.org/en/) to build and serve this.
 bundle exec jekyll serve
 ```
 
+Blog is served locally at `localhost:4000`.
+
 # Licensing
 
 This repository is open-source, with the following licensing:
