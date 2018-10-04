@@ -1,68 +1,76 @@
 ---
 layout: post
-title: Introducing Nexture, the first skin microdetails baker powered by artificial neural networks
-notes: Co-written with TexturingXYZ
-license: Specific, contact us for details
+title: Introducing Nexture, the first microdetails synthesizer powered by artificial neural networks
 ---
 
-![3D Render before and after processing displacement map with Nexture](/assets/side_face_gif.gif)
+![3D Render before and after processing displacement map with Nexture](/assets/banner-normal-spec.jpg)
 
-# The quest for hyperrealism in CGI human characters
+# Reaching photorealism for computer-generated human characters
 
-From a multi-aspects point of view and for almost all departments such as modeling, animation, texturing, lookdev, rendering, etc., realism & hyperrealism is “still” something really difficult, if not almost “impossible”  to achieve when it comes to humans, simply because “realism” means to re-create reality, where, in CG we tend to only “mimic” it. There are way too many things regarding humans that our brain automatically detects as real or fake.
+The “[uncanny valley](https://en.wikipedia.org/wiki/Uncanny_valley)” is a popular concept that highlights the barrier between reality and computer-generated imagery ([CGI](https://en.wikipedia.org/wiki/Computer-generated_imagery)). It states in particular that photorealistic characters either look real, and you forget about it, or they look fake and weird. There is no middle-ground.
 
-That’s also why major studios are working really hard to make digi-doubles, most of the time using scanned data along with [FACS](https://en.wikipedia.org/wiki/Facial_Action_Coding_System) / [Mocap](https://en.wikipedia.org/wiki/Motion_capture) to get “accurate” models to work with. In this case, accurate doesn’t actually mean that it is 100% like in reality, it’s still an interpretation of all the technology that produces the digi-double. Thanks to existing technology, we can achieve close to 95% true realism. But it’s that 5% left that makes CG humans look fake.
+Therefore, major studios work really hard to create digital actors that perform in 3D-rendered movies and sequences.
+Those digi-doubles contain **volume**, **surface**, and **motion** information required for the acting and rendering.
 
-Skin structure representation in [CGI](https://en.wikipedia.org/wiki/Computer-generated_imagery) has always been a hugely complicated task to achieve when it comes to creating a hyper-realistic character or creature that needs to be integrated into a real-world environment.
+In this article, we focus on the **surface** information, that is usually obtained through photogrammetric scanning and manual work. More specifically, **human skin surface** is tough to represent in CGI, and remains a true challenge for ultra-realistic characters that integrate seamlessly into their environment.
 
-We all know the “[uncanny valley](https://en.wikipedia.org/wiki/Uncanny_valley)”, that refers to the breach between reality and CG. If you look closely at the characters made in the last 10 years, especially in movies, you will notice a huge improvement in terms of realism. That’s also because tools have evolved, technology emerged and the VFX industry has grown enormously.
+Using photogrammetric scans directly can provide very highly detailed texture, but offer no intrinsic flexibility.
+Any manual modification, to add or remove wrinkles at desired location for instance, is a nightmare to do, because exactly of the level of detail. Any major modification of the map will also require updating all level of details.
+Think of it as if you are asked to reshape a mountain, and you have to move every single rock on it to keep the result real.
 
-In fact, more and more fully CGI characters are on screen for longer periods of time (CF : [Thanos in The Avengers Infinity war](https://www.fxguide.com/featured/making-thanos-face-the-avengers/)), and need to be realistic and fully integrated into their environments to be convincing. With the arrival of 4k screens, the standardization of IMAX in theatre, subtlety over the details become a must, to achieve something believable and almost touchable.
+Another approach consists in scraping parts of multiple scans, and placing them together to form the final texture.
+This approach offers more flexibility and constraints less the artist, but presents one intrinsic issue : stitching.
+All those patches need to be stitched together so that the resulting map becomes seamless.
+This is usually achieved some form of transparency and blurring, which, ultimately, results in a loss of quality.
 
-Following, and inspired by the great research on Micro geometry (http://gl.ict.usc.edu/Research/Microgeometry/) from Paul Debevec and his team, we have worked closely with [TexturingXYZ](texturing.xyz) company for the past two years on an innovative and powerful AI-based tool that could generate micro maps from an existing displacement map.
+Therefore, there is a need for a new approach that would still give full flexibility to the artist, while being able to produce **seamless**, high-quality maps, out of the box. At Cronobo, we have developed a new tool, called Nexture, to solve this issue.
 
-![A few examples of the skin microgeometry dataset](/assets/dataset.jpg)
+# Nexture
 
-![Overview of the rendering process](/assets/sample_micro_generation.jpg)
+Nexture is the fruit of a large effort of research and development, and is the combination of multiple advances in the field of artificial neural networks, human skin capture and human skin representation
 
-The main idea was to bring a new way of generating micro maps, that could lead to a more realistic skin feel, highly improved roughness, effortlessly and accurately, based on a massive micro scans library.
+![Preview of Nexture on displacement map](/assets/crops_gif.gif)
 
-![Closeup of a 3D render of a human digi-double using Nexture-processed displacement map](/assets/011.jpg)
+At its heart, Nexture can synthesize any image (*pattern*) onto any other (*input*) image.
 
-For this, TexturingXYZ captured over 1000 micro skin data for the whole body (~800) and face (~200) using photometric stereo principals and custom equipment, with matching Albedo, Specular and Displacement.
-Each captured sample is about 6mm for 512px, which is more than enough to get the core structure of a skin pore (pattern) and let the AI tool work with it. The library is now complete and fully workable with the software.
+The result maintains the structure of the input, while having appearance and style of the pattern.
+The synthesis is not just a matter of adding the pattern on top of the input.
+Pattern "lock" on the existing structure, matching perfectly and in an organic fashion.
 
-# Synthesizing ultra-realistic textures using Artificial Neural Networks
+The images below were generated with Nexture, in 5 mins (the original map is 2000 pixels wide by 1000 pixels high), by changing the applied pattern:
 
-At [Cronobo](https://cronobo.com), we achieved the vision of TexturingXYZ by implementing [Nexture](https://cronobo.com/products/nexture), the first micro-details baker powered by neural networks.
+![Multiple pattern on same image](/assets/comp_all_gif.gif)
 
-![Before/After Nexture processing](/assets/017.jpg){: .center-image }
+One application of this technique is therefore to synthesize ultra-detailed patches of human skin, on top of an average human skin texture.
 
-Nexture can increase the level-of-details of any texture, far beyond what can be captured with even the most advanced photogrammetry rigs, while respecting the original image content and structure. Nexture does not simply apply or blend details above the existing image, it synthesizes from scratch in an iterative approach a new image that matches the content of the input while applying details inspired from the pattern bank.
+It is ideally suited for refining existing human skin textures to an upper level, while providing a lot of control to the artist on the visual output. The generation of details makes it possible to increase the definition of a displacement map by a factor of 4 and above.
 
-![Front 3D render of a human face before and after processing displacement map with Nexture](/assets/front_face_gif.gif)
+![Increasing image definition with Nexture](/assets/nexture_process.png)
 
-![Front 3D render specular pass of a human face before and after processing displacement map with Nexture](/assets/front_face_spec_gif.gif)
-
-This feat is achieved with a powerful processing algorithm that relies at its core on a neural network. Recent advances in the field of artificial intelligence have demonstrated how neural networks can be such an incredibly powerful tool for extracting high level information from raw pixel data, such as feature extraction, image matching, image translation, separation between style & structure, and image classification. The quality of this kind of neural information helps Nexture reach such high levels of quality, and guarantees that the result will be good on a very large range of input images.
-
-Additionally, Nexture is capable of “understanding” a translation between two images. This capability lets us for instance generate a specular and albedo map, directly from a displacement map.
-
-Because Nexture is capable of adding details to an image, the side-effect is that it can also increase the texture resolution. It is common to increase by a factor of 4 the resolution of the displacement map, while getting a sharp output image.
-
-Most importantly, Nexture does not try to replace artists. Instead, artists focus on what matters, for instance designing the core features of a human face displacement map, define which kind of details must be applied on each area of the map, and let Nexture do its work and handle the time-consuming task of applying those details.
+Nexture has many features that would be hard to cover in a single article, but one of them is worth mentioning.
+This feature is the capability to use many different patterns, on the same image, and still obtain a seamless image out of the box. This feature alone has the potential to profoundly change the approach for creating human skin textures.
 
 ![Turning a noise into a skin pattern](/assets/noise_transform.gif)
 
-At Cronobo, our experience and skill set has enabled us not only to implement the core features of Nexture, but to make it viable for the constraints of the CGI world, such as handling huge image resolutions, applying large amount of different details on the resulting image, optimization and computation times, and much more. We believe it is the first of a new generation of tools that can do a better job at helping artists achieve their vision.
+# A combination of data, algorithms and neural networks
 
-# Getting access to this technology
+To fuel the software, we have captured human skin microstructure at an unprecedented level, using regular photogrammetric technique, but with a custom-built shape-from-shading surface reconstruction technique.
 
-We are offering this tool on-demand as a service for anyone who would like to improve and get the benefit of it.
-On the other side, for companies in need to process images on premises, we can provide a portable deployment on internal infrastructure including extensive support.
+The current dataset comprises 50 samples, and is in the process of being expanded to 200, to cover all a majority of variations found on actual human skin.
 
-And of course, we are always here to help customers for more specific applications and use-cases. Feel free to contact us, we would love to hear from you !
+![A few examples of the skin microgeometry dataset](/assets/patterns_filigrane.jpg)
 
-# About the authors
+This library is included by default in Nexture. The combination of this high-quality dataset and the robust algorithm that is at the core of Nexture provides high-quality, reliable results, on a very wide range of different textures and images.
+Below is a preview of what Nexture can do on an existing 3D model:
 
-This article was co-written with Jeremy Celeste, from [TexturingXYZ](https://texturing.xyz) ([Facebook](https://facebook.com/texturingxyz)). 3D renders courtesy of TexturingXYZ.
+![3D render result](/assets/before_after_gif.gif)
+
+We have taken great care of making Nexture viable for the CGI field, and accounting for constraints in terms of image definition and quality. We believe it is the first of a new generation of tools that can do a better job at helping artists achieve their vision.
+
+# Getting access
+
+Nexture is currently entering beta release for studios, and it will become more broadly available in the coming months.
+
+# Credits
+
+A big thanks to Nicolas Collings ([nicolascollings.com](nicolascollings.com)) for the beautiful 3D renders. 
