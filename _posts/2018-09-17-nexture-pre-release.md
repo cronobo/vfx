@@ -10,7 +10,7 @@ Human skin is an incredible topic of research for 3D rendering.
 However, Nexture is not only about human skin texture. *Very far from it.*
 
 Nexture is about producing images in a **modular** approach, faster and with very high quality.
-Fundamentally, Nexture can synthesize any amount of patterns, on any image, **seamlessly**.
+Fundamentally, Nexture can synthesize any amount of patterns, on any image, without any visible seams.
 
 ## Seamless Textures
 
@@ -64,9 +64,9 @@ What about creating both a displacement map and its specular ? Nexture do that t
 
 ### Scale
 
-You can change the scale of the patterns.
+You can change the scale of the patterns. The image below is produced with the same input, and same pattern, but with different scales.
 
-![](Image with different scale)
+![Base image with different scales](/assets/s47_scale_gif.gif)
 
 ### Transition width
 
