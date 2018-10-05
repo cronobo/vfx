@@ -12,9 +12,9 @@ The “[uncanny valley](https://en.wikipedia.org/wiki/Uncanny_valley)” is a po
 Therefore, major studios work really hard to create digital actors that perform in 3D-rendered movies and sequences.
 Those digi-doubles contain **volume**, **surface**, and **motion** information required for the acting and rendering.
 
-In this article, we focus on the **surface** information, that is usually obtained through photogrammetric scanning and manual work. More specifically, **human skin surface** is tough to represent in CGI, and remains a true challenge for ultra-realistic characters that integrate seamlessly into their environment.
+In this article, we focus on the **surface** information, that is usually obtained through photometric scanning and manual work. More specifically, **human skin surface** is tough to represent in CGI, and remains a true challenge for ultra-realistic characters that integrate seamlessly into their environment.
 
-Using photogrammetric scans directly can provide very highly detailed texture, but offer no intrinsic flexibility.
+Using photometric scans directly can provide very highly detailed texture, but offer no intrinsic flexibility.
 Any manual modification, to add or remove wrinkles at desired location for instance, is a nightmare to do, because exactly of the level of detail. Any major modification of the map will also require updating all level of details.
 Think of it as if you are asked to reshape a mountain, and you have to move every single rock on it to keep the result real.
 
@@ -54,7 +54,7 @@ This feature is the capability to use many different patterns, on the same image
 
 # A combination of data, algorithms and neural networks
 
-To fuel the software, we have captured human skin microstructure at an unprecedented level, using regular photogrammetric technique, but with a custom-built shape-from-shading surface reconstruction technique.
+To fuel the software, we have captured human skin microstructure at an unprecedented level, using regular photometric technique, but with a custom-built shape-from-shading surface reconstruction technique.
 
 The current dataset comprises 50 samples, and is in the process of being expanded to 200, to cover all a majority of variations found on actual human skin.
 
@@ -73,4 +73,4 @@ Nexture is currently entering beta release for studios, and it will become more 
 
 # Credits
 
-A big thanks to Nicolas Collings ([nicolascollings.com](nicolascollings.com)) for the beautiful 3D renders. 
+A big thanks to Nicolas Collings ([nicolascollings.com](nicolascollings.com)) for the beautiful 3D renders.
