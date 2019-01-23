@@ -1,17 +1,34 @@
 ---
 layout: post
-title: Announcing Nexture Online - skin microdetails synthesis, directly through your browser
+title: Announcing Nexture Online - Generate a bunch of detail layers from a single texture, straight from your browser
 ---
 
 While Nexture for Studios is currently beta-tested in some large VFX studios, we at Cronobo wanted to open up the technology to everyone.
 
-After a few months of hard work, **we are proud to officially release [Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}**, a skin microdetails synthesizer directly available through your browser.
+After a few months of hard work, we are proud to officially release **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}**, a tool capable to **generate a batch of detail layers from any texture**, using AI.
+These layers simplify greatly the detailing work on any texture, because they give the artist a convenient variation of detail layers, from the same source image.
 
-![Nexture Online applied onto a skin displacement map](/assets/synthesis_nexture_online.gif)
+*Pattern s3 - scale 0.5*
+![s3 0.5](/assets/parametric/nexture_preview_s3_0p5.jpg)
+
+*Pattern s1 - scale 0.5*
+![s1 0.5](/assets/parametric/nexture_preview_s1_0p5.jpg)
+
+*Pattern s5 - scale 0.5*
+![s5 0.5](/assets/parametric/nexture_preview_s6_0p5.jpg)
+
+Since **all detail layers match the structure of your texture**, producing a final, highly-detailed map is super easy.
+Just fire up your favorite 3D texturing tool, **apply clipping masks and blend those layers to the original texture** to produce very **quickly a highly detailed texture**.
+
+# Usage
+
+The tool is directly available from your browser, requires no signup and is super easy to use.
+Behind the scene, it operates our Nexture technology on latest cloud GPUs to make sure you get your maps rapidly and with the best quality.
+
+![Monkey gif](/assets/monkey.gif)
 
 Our goal with Nexture Online is to help small studios, freelance & individual artists accelerate the process of making photorealistic organic textures, by automating the generation of details on displacement maps.
 
-# Usage
 
 The tool is focused on ease of use:
 
@@ -36,11 +53,7 @@ For each pattern, you can change the scale, so that details that integrate nicel
 
 After synthesis, you end up with one or more maps, each corresponding to your texture but with a different pattern:
 
-![s3 0.5](/assets/parametric/nexture_preview_s3_0p5.jpg)
 
-![s1 0.5](/assets/parametric/nexture_preview_s1_0p5.jpg)
-
-![s5 0.5](/assets/parametric/nexture_preview_s6_0p5.jpg)
 
 The images above give you a good example of the diversity you can generate from a single displacement map.
 
@@ -64,7 +77,7 @@ Every job launched through Nexture Online runs on an Nvidia Tesla V100, [one of 
 
 Therefore, by offering this product through a browser, **we are able to give anyone access to the most advanced hardware, for the price of a texture**.
 
-![Monkey gif](/assets/monkey.gif)
+![Nexture Online applied onto a skin displacement map](/assets/synthesis_nexture_online.gif)
 
 # Roadmap
 
@@ -78,6 +91,6 @@ Some features are still missing compared to the Studio version, namely:
 Also, to fit all the data required for synthesis inside a GPU, there are some settings on our core algorithm that had been set to minimum. The quality even with those minimum settings is already amazing, but as we improve the software's performance and as hardware progresses, we'll be able to increase quality settings and obtain very incredible synthesized maps.
 
 Finally, our internal pattern-capture pipeline improves every day, whether it's the hardware or the post-processing.
-Thanks to our core software-background, we can leverage image processing algorithms that are simply not available in any commercial products, and even roll out our own solutions. 
+Thanks to our core software-background, we can leverage image processing algorithms that are simply not available in any commercial products, and even roll out our own solutions.
 
 On a more broad topic, we have multiple new technologies that are now going under a strong R&D effort, and multiple neural networks in training as I write. Stay tuned !
