@@ -104,4 +104,4 @@ We have also kickstarted the development of a proper interface to make Nexture m
 
 The update is now available since a few hours in Nexture Online (the public announcement has not been made yet but it's going live in a couple of days).
 
-We're also researching exciting technologies in more diverses VFX/Video Games specialties, such as Lighting and Texture compression. Stay tuned for what's coming next !
+We're also researching exciting technologies in more diverses VFX/Video Games fields, such as Lighting and Texture compression. Stay tuned for what's coming next !

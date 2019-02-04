@@ -9,6 +9,12 @@ bundle exec jekyll serve
 
 Blog is served locally at `localhost:4000`.
 
+## Install
+
+```
+bundle install
+```
+
 # Licensing
 
 This repository is open-source, with the following licensing:
