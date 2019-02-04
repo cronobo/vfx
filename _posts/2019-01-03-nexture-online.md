@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Announcing Nexture Online - Generate a bunch of detail layers from a single texture, straight from your browser
+title: Announcing Nexture Online - AI-powered microdetail layers generation, straight from your browser
 ---
 
-While Nexture for Studios is currently beta-tested in some large VFX studios, we at Cronobo wanted to open up the technology to everyone.
+While Nexture for Studios is currently beta-tested in some large VFX studios, at Cronobo we have been thinking for a while abount how to open up the technology to everyone, in an easy and user-friendly way.
 
-After a few months of hard work, we are proud to officially release **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}**, a tool capable to **generate a batch of detail layers from any texture**, using AI.
-These layers simplify greatly the detailing work on any texture, because they give the artist a convenient variation of detail layers, from the same source image.
+After a few months of hard work, we are proud to officially release **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}**, a tool capable of **generating a batch of detail layers from any texture**, using Artificial Intelligence.
+These layers simplify greatly the detailing work on any texture, because they give the artist a convenient variation of detail layers, from the same source image. Basically, they give ultra high quality matter to work from.
 
 *Pattern s3 - scale 0.5*
 ![s3 0.5](/assets/parametric/nexture_preview_s3_0p5.jpg)
@@ -18,7 +18,7 @@ These layers simplify greatly the detailing work on any texture, because they gi
 ![s5 0.5](/assets/parametric/nexture_preview_s6_0p5.jpg)
 
 Since **all detail layers match the structure of your texture**, producing a final, highly-detailed map is super easy.
-Just fire up your favorite 3D texturing tool, **apply clipping masks and blend those layers to the original texture** to produce very **quickly a highly detailed texture**.
+Simply use any of the generated maps directly, or if you want more variations, mix multiple maps together with clipping masks for instance.
 
 # Usage
 
@@ -64,13 +64,15 @@ Also, GPUs are improving quickly, and become quickly deprecated for AI-based app
 By offering this product through a browser, we are able to leverage the extraordinary hardware that is offered by Cloud providers.
 Every job launched through **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}** runs on an Nvidia Tesla V100, [one of the most powerful GPUs on the planet](https://www.nvidia.com/en-us/data-center/tesla-v100/).
 
-Therefore, by offering this product through a browser, we are able to give anyone access to the best hardware, for the pricetag of a texture.
+Therefore, by offering this product through a browser, we are able to give anyone access to the best hardware at a very affordable price.
 
 ![Nexture Online applied onto a skin displacement map](/assets/synthesis_nexture_online.gif)
 
+We also know some people do not want to run stuff in the cloud. For this purpose, we will be opening our Studio version to Freelancers once we develop a clean User Interface (UI) up and running.
+
 # Roadmap
 
-This tool is still in beta, and we'd love to get your feedback. You can reach us at [contact@cronobo.com](mailto:contact@cronobo.com) or via [cronobo.com](https://cronobo) help chat.
+This tool is still in beta, and we'd love to get your feedback. You can reach us at [contact@cronobo.com](mailto:contact@cronobo.com) or via [cronobo.com](https://cronobo)'s help chat.
 
 Some features are still missing compared to the Studio version, namely:
 
@@ -84,3 +86,5 @@ Finally, our internal pattern-capture pipeline improves every day, whether it's 
 Thanks to our core software-background, we can leverage image processing algorithms that are simply not available in any commercial products, and even roll out our own solutions.
 
 On a more broad topic, we have multiple new technologies that are now going under a strong R&D effort, and multiple neural networks in training as I write. Stay tuned !
+
+*Note: We've achieved some [major quality upgrade](/2019/02/02/groundbreaking-progress.html) since this article was written down. Check them out !*
