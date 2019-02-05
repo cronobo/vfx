@@ -88,11 +88,15 @@ In the new image, details perfectly integrate with the original map.
 The details have a lot of variation and flow naturally on the texture.
 As you may have noticed, they expand, contract and follow the original map.
 
+In the closeup below, observe how the fine-detail incorporates into the large wrinkle, and "lock" around the existing structure:
+
+![New approach](/assets/new_version.gif)
+
 **We believe these new capabilities are truly outstanding**, and set new standards for producing ultra detailed textures.
 
 Clearly, this behavior is impossible to match with any manual approach, based on tileable details maps for instance, unless by spending an enormous amount of time placing patterns - which is neither fun nor doable.
 
-And as you can imagine, we are very excited about the new Texture-transform mode and we're sure it will open up new innovative ways to produce textures.
+And as you can imagine, we are also very excited about the new Texture-transform mode and we're sure it will open up new innovative ways to produce textures.
 
 ![Total mode](/assets/total_gif.gif)
 
