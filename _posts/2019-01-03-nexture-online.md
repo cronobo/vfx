@@ -5,7 +5,7 @@ title: Announcing Nexture Online - AI-powered microdetail layers generation, str
 
 While Nexture for Studios is currently beta-tested in some large VFX studios, at Cronobo we have been thinking for a while abount how to open up the technology to everyone, in an easy and user-friendly way.
 
-After a few months of hard work, we are proud to officially release **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}**, a tool capable of **generating a batch of detail layers from any texture**, using Artificial Intelligence.
+After a few months of hard work, we are proud to officially release **[Nexture Online](https://cronobo.com/products/nexture/online){:target="_blank"}**, a tool capable of **generating a batch of detail layers from any texture**, using Artificial Intelligence.
 These layers simplify greatly the detailing work on any texture, because they give the artist a convenient variation of detail layers, from the same source image. Basically, they give ultra high quality matter to work from.
 
 *Pattern s3 - scale 0.5*
@@ -62,7 +62,7 @@ Some folks do have the hardware to run it, but not everyone because this stuff i
 Also, GPUs are improving quickly, and become quickly deprecated for AI-based applications.
 
 By offering this product through a browser, we are able to leverage the extraordinary hardware that is offered by Cloud providers.
-Every job launched through **[Nexture Online](https://cronobo.com/nexture-cloud){:target="_blank"}** runs on an Nvidia Tesla V100, [one of the most powerful GPUs on the planet](https://www.nvidia.com/en-us/data-center/tesla-v100/).
+Every job launched through **[Nexture Online](https://cronobo.com/products/nexture/online){:target="_blank"}** runs on an Nvidia Tesla V100, [one of the most powerful GPUs on the planet](https://www.nvidia.com/en-us/data-center/tesla-v100/).
 
 Therefore, by offering this product through a browser, we are able to give anyone access to the best hardware at a very affordable price.
 
@@ -87,4 +87,4 @@ Thanks to our core software-background, we can leverage image processing algorit
 
 On a more broad topic, we have multiple new technologies that are now going under a strong R&D effort, and multiple neural networks in training as I write. Stay tuned !
 
-*Note: We've achieved some [major quality upgrade](/2019/02/02/groundbreaking-progress.html) since this article was written down. Check them out !*
+*Note: We've achieved some [major quality upgrade](/2019/02/02/groundbreaking-progress.html) since this article was written down. Check it out !*

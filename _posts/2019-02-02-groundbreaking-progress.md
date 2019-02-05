@@ -38,7 +38,7 @@ A reference overlay is painted roughly on top of the picture:
 
 A second overlay is drawn, with different positioning of rivers, neighborhoods and trees.
 
-Then, and this is where the fun starts, with this new overlay, we ask a simple question - *What is the city image that matches this new overlay ?*
+Then, and this is where the fun starts, with this new overlay, we ask a simple question - *What is the new city image that matches this new overlay ?*
 
 ![New overlay](/assets/new_overlay.jpg)
 
@@ -57,7 +57,7 @@ Last Thursday, all the fixes and improvements were finally implemented. Immediat
 ![Result with new version](/assets/new_nexture_version.jpg)
 
 I can't tell you how excited we were when we first saw this.
-**The sharpness and fidelity of the new version are just insane** compared to the previous one.
+**The sharpness and fidelity of the new version is just insane** compared to the previous one.
 And we're not even using the highest quality settings.
 
 With a simple setting change (changing a single layer in the neural network), another version is obtained that produces more realistic trees but has less accurate colors (another lead to explore to get the quality even further):
@@ -70,7 +70,7 @@ With a simple setting change (changing a single layer in the neural network), an
 Immediately, a more practical test is started.
 Nexture is configured to synthesize details on a human skin displacement map.
 
-This is a closeup of the input map, drawn with ZBrush:
+Below is a closeup of the input map, drawn with ZBrush. As you can see, there isn't much on it.
 
 ![Original map](/assets/newversion/original.jpg)
 
@@ -82,7 +82,7 @@ This is a closeup of the input map, drawn with ZBrush:
 
 ![New version](/assets/newversion/new_result.jpg)
 
-Once again, we are not disappointed. The improvement is very big and noticeable.
+Once again, we are not disappointed. The improvement is very big.
 
 In the new image, details perfectly integrate with the original map.
 The details have a lot of variation and flow naturally on the texture.
@@ -102,6 +102,6 @@ Although we've reached a milestone, the quest for more quality is not over.
 There are many areas we are researching to take it even further.
 We have also kickstarted the development of a proper interface to make Nexture more accessible and even more fun to use.
 
-The update is now available since a few hours in Nexture Online (the public announcement has not been made yet but it's going live in a couple of days).
+The update is now available since a few hours in Nexture Online (the public announcement has not been made yet but it's going live in a couple of days). (**[Try it online](https://cronobo.com/products/nexture/online){:target="_blank"}**)
 
 We're also researching exciting technologies in more diverses VFX/Video Games fields, such as Lighting and Texture compression. Stay tuned for what's coming next !
