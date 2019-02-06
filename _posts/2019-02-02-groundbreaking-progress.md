@@ -118,9 +118,9 @@ And as you can imagine, we are also very excited about the new Texture-transform
 
 Although we've reached a milestone, the quest for more quality is not over.
 There are many areas we are researching to take it even further.
-We have also kickstarted the development of a proper interface to make Nexture more accessible and even more fun to use.
+We have also kickstarted the development of a proper interface to make Nexture a regular desktop application, that will make it more accessible and even more fun to use.
 
-The update is now available since a few hours in Nexture Online (the public announcement has not been made yet but it's going live in a couple of days). (**[Try it online](https://cronobo.com/products/nexture/online){:target="_blank"}**)
+In the meantime, Nexture is also available **[directly through your browser](https://cronobo.com/products/nexture/online){:target="_blank"}**, letting anyone test the technology (**including a free mode**) and synthesize micro-details maps (with the same quality but a limited set of features in a first time).
 
 ![New approach](/assets/new_version.gif)
 
